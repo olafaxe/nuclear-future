@@ -1,0 +1,26 @@
+{
+  "name": "nuclear-future",
+  "version": "1.0.0",
+  "description": "school assignment (sass &amp; typescript)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/olafaxe/nuclear-future.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olafaxe/nuclear-future/issues"
+  },
+  "homepage": "https://github.com/olafaxe/nuclear-future#readme",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "mongodb": "^3.3.2",
+    "nodemon": "^1.19.2"
+  }
+}

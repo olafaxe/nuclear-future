@@ -1,0 +1,19 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<script>
+  window.onload = () => {
+    const scripts = [
+      {
+        script: "/main.js",
+        type: "module"
+      }
+    ];
+    scripts.forEach(e => {
+      let scripttag = document.createElement("script");
+      scripttag.setAttribute("src", e.script);
+      scripttag.setAttribute("type", e.type);
+      document.head.appendChild(scripttag);
+    });
+  };
+</script>
