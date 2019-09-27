@@ -5,6 +5,8 @@ $main-color: #f8f8f8;
 $link-color: #bdbdbd;
 $second-color: #82888a;
 
+$main-color_blur: #f8f8f8bd;
+
 html {
   margin: 0px;
   padding: 0px;
@@ -30,7 +32,7 @@ body {
     flex: 1;
     text-align: center;
     h4 {
-      color: $link-color;
+      color: $second-color;
     }
   }
 }
@@ -126,7 +128,7 @@ body {
   background-color: $main-color;
   border: none;
   color: $second-color;
-  padding: 10px;
+  padding: 5px;
   text-decoration: none;
   font-size: 16px;
   width: 125px;
@@ -135,11 +137,43 @@ body {
   align-items: center;
   justify-content: center;
   text-shadow: none;
-  outline: 3px solid #000000;
-  cursor: pointer;
+  outline: 3px solid #00000080;
 }
 
-.btn-container:hover {
-  outline: none;
-  box-shadow: inset 3px 3px 5px 1px #00000080, inset -3px -3px 5px 1px #00000080;
+.nav__cursor {
+  cursor: pointer;
+}
+// .btn-container__click {
+//   outline: 3px solid #00000080;
+//   box-shadow: inset 1px 1px 5px 1px #00000080, inset -1px -1px 5px 1px #00000009;
+//   font-size: 14px;
+// }
+
+.about__first {
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  background-image: url("images/Hipster.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  text-shadow: -1px 0 #242424, 0 1px #242424, 1px 0 #242424, 0 -1px #242424;
+  font-size: 150%;
+  text-align: center;
+  position: relative;
+}
+
+.about__backdrop {
+  // filter: blur(100px);
+  background-color: #00000075;
+  border: solid 5px #ffffff;
+
+  width: 700px;
+  height: 325px;
+}
+.about__text {
+  filter: none;
+}
+.about__headline {
+  // background-color: $main-color-blur;
+  font-size: 150%;
 }

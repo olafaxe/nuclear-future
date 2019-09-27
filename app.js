@@ -7,9 +7,12 @@ app.use(express.static("views/public"));
 app.get("/", (req, res) => {
     res.render("pages/index");
 });
+app.get("/main", (req, res) => {
+    res.render("pages/main");
+});
 app.get("/about", (req, res) => {
     console.log(res);
-    res.render("pages/about.ejs");
+    res.render("pages/about");
 });
 app.listen(port, () => {
     console.log(`Lyssnar på port: ${port}`);
