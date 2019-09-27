@@ -1,8 +1,8 @@
 {
   "version": 3,
   "sourceRoot": "",
-  "sources": ["grids.css"],
+  "sources": ["animation.css"],
   "names": [],
   "mappings": "AAAA;EACE;",
-  "file": "grids.css"
+  "file": "animation.css"
 }

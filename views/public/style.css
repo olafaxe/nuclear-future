@@ -28,7 +28,7 @@ body {
 }
 
 .header__right div h4 {
-  color: #bdbdbd;
+  color: #82888a;
 }
 
 .header__left {
@@ -125,7 +125,7 @@ body {
   background-color: #f8f8f8;
   border: none;
   color: #82888a;
-  padding: 10px;
+  padding: 5px;
   text-decoration: none;
   font-size: 16px;
   width: 125px;
@@ -134,37 +134,63 @@ body {
   align-items: center;
   justify-content: center;
   text-shadow: none;
-  outline: 3px solid #000000;
+  outline: 3px solid #00000080;
+}
+
+.nav__cursor {
   cursor: pointer;
 }
 
-.btn-container:hover {
-  outline: none;
-  box-shadow: inset 3px 3px 5px 1px #00000080, inset -3px -3px 5px 1px #00000080;
+.about__first {
+  color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  background-image: url("images/Hipster.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  text-shadow: -1px 0 #242424, 0 1px #242424, 1px 0 #242424, 0 -1px #242424;
+  font-size: 150%;
+  text-align: center;
+  position: relative;
 }
 
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
+.about__backdrop {
+  background-color: #00000075;
+  border: solid 5px #ffffff;
+  width: 700px;
+  height: 325px;
+}
 
+<<<<<<< HEAD
 /*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+=======
+.about__text {
+  filter: none;
+}
+>>>>>>> spa-version
+
+.about__headline {
+  font-size: 150%;
+}
