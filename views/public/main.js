@@ -45,3 +45,19 @@ function buttonAnimation(target) {
         }
     });
 }
+window.addEventListener("click", e => {
+    let closeBtn = document.querySelector(".close-button");
+    let burger = document.querySelector(".header__hamburger");
+    if (e.target.classList.contains("header__hamburger") ||
+        e.target.classList.contains("hamburger")) {
+        console.log(closeBtn);
+        console.log(burger);
+        burger.classList.add("display-none");
+        closeBtn.classList.remove("display-none");
+    }
+    if (e.target.classList.contains("close-button") ||
+        e.target.classList.contains("close-button__btn")) {
+        burger.classList.remove("display-none");
+        closeBtn.classList.add("display-none");
+    }
+});

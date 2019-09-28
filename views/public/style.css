@@ -31,6 +31,22 @@ body {
   color: #82888a;
 }
 
+@media only screen and (max-width: 370px) {
+  .header__right div h4 {
+    margin-top: 25px;
+    font-size: 75%;
+  }
+}
+.header-link:nth-child(1) {
+  margin-left: -20px;
+  margin-right: 20px;
+}
+
+.header-link:nth-child(3) {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .header__left {
   width: 100%;
   height: 100%;
@@ -231,9 +247,6 @@ body {
   height: 300px;
 }
 
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 
