@@ -16,8 +16,11 @@ app.get("/main", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-  console.log(res);
   res.render("pages/about");
+});
+
+app.get("/projects", (req, res) => {
+  res.render("pages/projects");
 });
 
 app.listen(port, () => {
