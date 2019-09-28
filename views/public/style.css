@@ -66,6 +66,8 @@ body {
   height: 100%;
   flex: 1;
   background-color: #f8f8f8;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-main {
@@ -73,30 +75,45 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .footer-main__item {
   flex: 1;
   display: flex;
-  margin: auto;
-  text-align: center;
+  margin: 20px;
 }
 
 .footer-item__text {
-  margin-top: 45px;
+  margin-top: 25px;
   margin-bottom: -45px;
 }
 
+.footer-item__text h3 {
+  padding-left: 10px;
+}
+
+.footer-item__link {
+  padding-top: 15px;
+  margin-bottom: 10px;
+}
+
 .footer-item__img {
-  width: 50px;
-  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.fa-linkedin,
+.fa-github {
+  color: #3e7297;
+  font-size: 3em;
 }
 
 .index__first {
   color: #ffffff;
   align-items: center;
   justify-content: center;
-  background-image: url("images/nukes3.png");
+  background-image: url("images/sky.png");
   background-attachment: fixed;
   background-size: cover;
   text-shadow: -1px 0 #242424, 0 1px #242424, 1px 0 #242424, 0 -1px #242424;
@@ -110,6 +127,7 @@ body {
   justify-content: center;
   background-color: #f8f8f8;
   display: flex;
+  text-align: center;
 }
 
 .index__second div {
@@ -120,7 +138,7 @@ body {
 }
 
 .index__second div:nth-child(1) {
-  margin-left: 15%;
+  margin-left: 5%;
   padding: 0;
 }
 
@@ -150,7 +168,7 @@ body {
   color: #ffffff;
   align-items: center;
   justify-content: center;
-  background-image: url("images/nuclearflower2.png");
+  background-image: url("images/flower.png");
   background-attachment: fixed;
   background-size: cover;
   text-shadow: -1px 0 #242424, 0 1px #242424, 1px 0 #242424, 0 -1px #242424;
@@ -276,9 +294,10 @@ body {
 .projects-banner {
   width: 100%;
   height: 100%;
-  background-image: url("images/banner.jpg");
+  background-image: url("images/banner.png");
   background-attachment: fixed;
-  background-size: cover;
+  background-size: auto;
+  background-repeat: no-repeat;
 }
 
 .projects-headline {
@@ -312,11 +331,11 @@ body {
   margin-left: 20px;
   margin-right: 20px;
   flex-direction: column;
-  border: solid 5px #29363d;
+  border: solid 5px #f8f8f8bd;
   border-radius: 5px;
   justify-content: center;
   text-align: center;
-  box-shadow: 14px 11px 32px -5px rgba(130, 136, 138, 0.92);
+  box-shadow: 14px 11px 32px -5px #82888aeb;
   width: 300px;
 }
 
@@ -330,6 +349,107 @@ body {
   height: 300px;
 }
 
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
