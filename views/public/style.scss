@@ -458,6 +458,10 @@ body {
   .contact-form {
     fieldset {
       height: 400px;
+      margin-top: -50px;
+    }
+    #contact-form__texta {
+      height: 75%;
     }
   }
 }
