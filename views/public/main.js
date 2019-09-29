@@ -18,7 +18,30 @@ window.addEventListener("click", e => {
         if (target.classList.contains("nav-projects")) {
             navigateTo("projects");
         }
+        if (target.classList.contains("nav-contact")) {
+            navigateTo("contact");
+        }
     }, 300);
+});
+window.addEventListener("keyup", e => {
+    let textinput = document.querySelector("#contact-form__texta");
+    if (textinput.textLength < 1) {
+        textinput.style.width = `100%`;
+        textinput.style.height = `100%`;
+        textinput.style.background = `url("images/cat2.webp")`;
+        textinput.style.backgroundRepeat = `no-repeat`;
+        textinput.style.backgroundSize = `50%`;
+        textinput.style.backgroundPositionX = `50%`;
+        textinput.style.backgroundPositionY = `25%`;
+        textinput.style.fontSize = `115%`;
+        textinput.style.resize = `none`;
+        textinput.style.transition = `1s;`;
+    }
+    if (textinput.textLength >= 1) {
+        textinput.style.transition = `1s`;
+        textinput.style.backgroundPosition = `-100%`;
+    }
+    console.log(textinput.textLength);
 });
 function navigateTo(to) {
     fetch(`/${to}`)
@@ -45,19 +68,3 @@ function buttonAnimation(target) {
         }
     });
 }
-window.addEventListener("click", e => {
-    let closeBtn = document.querySelector(".close-button");
-    let burger = document.querySelector(".header__hamburger");
-    if (e.target.classList.contains("header__hamburger") ||
-        e.target.classList.contains("hamburger")) {
-        console.log(closeBtn);
-        console.log(burger);
-        burger.classList.add("display-none");
-        closeBtn.classList.remove("display-none");
-    }
-    if (e.target.classList.contains("close-button") ||
-        e.target.classList.contains("close-button__btn")) {
-        burger.classList.remove("display-none");
-        closeBtn.classList.add("display-none");
-    }
-});

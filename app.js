@@ -16,6 +16,9 @@ app.get("/about", (req, res) => {
 app.get("/projects", (req, res) => {
     res.render("pages/projects");
 });
+app.get("/contact", (req, res) => {
+    res.render("pages/contact");
+});
 app.listen(port, () => {
     console.log(`Lyssnar på port: ${port}`);
 });
