@@ -315,6 +315,12 @@ body {
   background-repeat: no-repeat;
 }
 
+@media only screen and (max-width: 855px) {
+  .projects-banner {
+    background-image: url("images/bannersmall.png");
+  }
+}
+
 .projects-headline {
   color: #ffffff;
   font-size: 300%;
