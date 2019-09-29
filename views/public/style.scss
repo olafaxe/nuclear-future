@@ -461,15 +461,21 @@ body {
 
 @media only screen and (max-width: 425px) {
   .contact-form {
-    h2 {
-      font-size: 100%;
-    }
-    fieldset {
-      height: 350px;
-      margin-top: 5px;
+    // h2 {
+    //   font-size: 100%;
+    // }
+    // fieldset {
+    //   height: 350px;
+    //   margin-top: 5px;
+    // }
+    // #contact-form__texta {
+    //   height: 75px;
+    // }
+    #fieldset {
+      height: 50%;
     }
     #contact-form__texta {
-      height: 75px;
+      height: 50%;
     }
 
     #contact-form__send-btn {
@@ -478,10 +484,6 @@ body {
       width: 165px;
       height: 75px;
       font-size: 125%;
-      border: none;
-      background-color: #3c4e58;
-      box-shadow: 6px 6px 0px -3px #29363d;
-      color: $main-color;
     }
   }
 }
