@@ -412,6 +412,8 @@ body {
 }
 
 .contact-form fieldset #contact-form__texta {
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
   height: 100%;
   background: url("images/cat2.webp");
@@ -430,16 +432,22 @@ body {
 .contact-form fieldset #contact-form__subject {
   width: 255px;
   margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
   height: 50px;
   font-size: 125%;
 }
 
 .contact-form fieldset #contact-form__email {
+  margin-left: auto;
+  margin-right: auto;
   width: 255px;
   margin-top: 20px;
 }
 
 .contact-form fieldset #contact-form__send-btn {
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 20px;
   margin-bottom: 10px;
   width: 265px;
@@ -468,6 +476,10 @@ body {
     font-size: 125%;
   }
 }
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
