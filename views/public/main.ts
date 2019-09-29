@@ -32,14 +32,18 @@ window.addEventListener("keyup", e => {
     textinput.style.height = `100%`;
     textinput.style.background = `url("images/cat2.webp")`;
     textinput.style.backgroundRepeat = `no-repeat`;
-    textinput.style.backgroundSize = `50%`;
-    textinput.style.maxWidth = `700px`;
+    textinput.style.backgroundSize = `25%`;
+    textinput.style.maxWidth = `500px`;
+    textinput.style.maxHeight = `300px`;
+    textinput.style.backgroundPositionX = `50%`;
+    textinput.style.backgroundPositionY = `50%`;
+
     textinput.style.fontSize = `115%`;
     textinput.style.resize = `none`;
-    textinput.style.transition = `1s;`;
+    textinput.style.transition = `2.5s;`;
   }
   if (textinput.textLength >= 1) {
-    textinput.style.transition = `1s`;
+    textinput.style.transition = `2.5s`;
     textinput.style.backgroundPosition = `-100%`;
   }
   console.log(textinput.textLength);

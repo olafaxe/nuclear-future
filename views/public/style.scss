@@ -424,13 +424,14 @@ body {
       height: 100%;
       background: url("images/cat2.webp");
       background-repeat: no-repeat;
-      background-size: 50%;
+      background-size: 25%;
       background-position-x: 50%;
       background-position-y: 25%;
       font-size: 115%;
       resize: none;
       transition: 1s;
-      max-width: 700px;
+      max-width: 500px;
+      max-height: 300px;
     }
 
     #contact-form__subject {
@@ -465,6 +466,9 @@ body {
     fieldset {
       height: 350px;
       margin-top: 5px;
+    }
+    #contact-form__texta {
+      height: 75px;
     }
 
     #contact-form__send-btn {
