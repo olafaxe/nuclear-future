@@ -5,7 +5,7 @@ const port = process.env.PORT || 3000;
 
 app.set("view engine", "ejs");
 app.use(express.static("views/public"));
-app.use(forceSecure(["faxe-atomics.herokuapp.com"]));
+app.use(forceSecure(["faxe-atomics.herokuapp.com/"]));
 
 app.get("/", (req, res) => {
   res.render("pages/index");
