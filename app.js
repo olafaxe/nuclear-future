@@ -1,9 +1,11 @@
 "use strict";
+const sslRedirect = require("heroku-ssl-redirect");
 const express = require("express");
 const app = express();
 const port = process.env.PORT || 3000;
 app.set("view engine", "ejs");
 app.use(express.static("views/public"));
+app.use(sslRedirect());
 app.get("/", (req, res) => {
     res.render("pages/index");
 });
