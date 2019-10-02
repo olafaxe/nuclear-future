@@ -55,6 +55,7 @@ body {
 .header__left img {
   margin-top: 15px;
   margin-left: 15px;
+  margin-right: 10px;
   max-height: 35px;
   width: auto;
   height: auto;
@@ -110,6 +111,19 @@ body {
 .fa-github {
   color: #3e7297;
   font-size: 3em;
+}
+
+.index__first h1,
+.index__first h2,
+.index__first h4,
+.index__second h1,
+.index__second h2,
+.index__second h4,
+.index__third h1,
+.index__third h2,
+.index__third h4 {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .index__first {
@@ -190,6 +204,27 @@ body {
     padding: 0;
   }
 }
+@media only screen and (max-width: 400px) {
+  .index__first {
+    font-size: 75%;
+  }
+
+  h1,
+h2,
+h4 {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .index__second div:nth-child(1) {
+    margin-left: 23%;
+  }
+}
+@media only screen and (max-width: 315px) {
+  .index__second div:nth-child(1) {
+    margin-left: 30%;
+  }
+}
 .index__third {
   color: #ffffff;
   align-items: center;
@@ -238,6 +273,7 @@ body {
 .about__backdrop {
   background-color: #00000075;
   border: solid 5px #ffffff;
+  margin-top: -75px;
   width: 700px;
   height: 325px;
 }
@@ -271,7 +307,8 @@ body {
 }
 @media only screen and (max-width: 530px) {
   .about__backdrop {
-    width: 450px;
+    width: 425px;
+    margin-top: -100px;
     height: 500px;
     text-align: justify;
     padding: 10px;
@@ -289,19 +326,29 @@ body {
 @media only screen and (max-width: 450px) {
   .about__backdrop {
     width: 300px;
-    height: 500px;
+    height: 350px;
     text-align: justify;
     padding: 20px;
-    font-size: 100%;
+    font-size: 75%;
   }
 }
 @media only screen and (max-width: 375px) {
   .about__backdrop {
-    width: 235;
-    height: 535;
+    width: 235px;
+    height: 350px;
     text-align: justify;
     padding: 20px;
-    font-size: 100%;
+    font-size: 75%;
+  }
+}
+@media only screen and (max-width: 340px) {
+  .about__backdrop {
+    width: 175px;
+    height: 415px;
+    margin-top: -150px;
+    text-align: justify;
+    padding: 20px;
+    font-size: 75%;
   }
 }
 .about__text {
@@ -326,13 +373,54 @@ body {
   background-repeat: no-repeat;
 }
 
+.project-image {
+  display: none;
+}
+
 @media only screen and (max-width: 855px) {
   .projects-banner {
-    background-image: url("images/bannersmall.png");
+    background-image: none;
+    background-size: contain;
+    background-color: #4682ad;
+  }
+
+  .project-image {
+    display: flex;
+    width: 700px;
+    margin-top: 0px;
+    margin-left: auto;
   }
 
   .about__first {
     background-image: url("images/Hipstersmall.jpg");
+  }
+}
+@media only screen and (max-width: 735px) {
+  .project-image {
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .project-image {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .project-image {
+    width: 300px;
+    margin-left: 10%;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .project-image {
+    width: 200px;
+    margin-left: 10%;
+  }
+}
+@media only screen and (max-width: 310px) {
+  .project-image {
+    width: 150px;
+    margin-left: 10%;
   }
 }
 .projects-headline {
@@ -397,21 +485,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.contact-form .contact-form__container {
-  flex: 2;
-  margin-left: 15%;
-  margin-right: 15%;
-  height: auto;
-  display: flex;
   flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
 }
 
-.contact-form .contact-form__container #contact-form__texta {
+.contact-form #contact-form__texta {
+  flex: 1;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -429,7 +507,8 @@ body {
   min-height: 300px;
 }
 
-.contact-form .contact-form__container #contact-form__subject {
+.contact-form #contact-form__subject {
+  flex: 1;
   width: 255px;
   margin-bottom: 10px;
   margin-left: auto;
@@ -438,14 +517,16 @@ body {
   font-size: 125%;
 }
 
-.contact-form .contact-form__container #contact-form__email {
+.contact-form #contact-form__email {
+  flex: 1;
   margin-left: auto;
   margin-right: auto;
   width: 255px;
   margin-top: 20px;
 }
 
-.contact-form .contact-form__container #contact-form__send-btn {
+.contact-form #contact-form__send-btn {
+  flex: 1;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
@@ -460,11 +541,14 @@ body {
 }
 
 @media only screen and (max-width: 425px) {
-  .contact-form .contact-form__container {
-    height: 50%;
+  .contact-form h2 {
+    font-size: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .contact-form #contact-form__texta {
+    width: 250px;
     height: 50%;
   }
 
@@ -491,533 +575,6 @@ body {
   box-shadow: 2px -2px 5px 0px #f8f8f8;
 }
 
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
-/*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
 /*# sourceMappingURL=style.css.map */
