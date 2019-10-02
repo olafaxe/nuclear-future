@@ -120,7 +120,11 @@ body {
   color: #3e7297;
   font-size: 3em;
 }
-
+.index__first {
+  div:nth-child(1) {
+    margin-top: -250px;
+  }
+}
 .index__first,
 .index__second,
 .index__third {
