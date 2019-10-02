@@ -41,7 +41,7 @@ app.post("/", (req, res) => {
         text: text
     };
     sgMail.send(msg).then(e => {
-        let sentMail = "MAIL SENT";
+        let sentMail = "RIGHT ON, I'LL BE IN TOUCH";
         res.render("pages/index", { sentMail: sentMail });
     });
 });

@@ -56,6 +56,7 @@ app.post("/", (req, res) => {
   let subject = req.body.subject;
   let text = req.body.text;
   let sender = req.body.email;
+
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   const msg = {
     to: process.env.SENDGRID_MAIL,
@@ -64,7 +65,7 @@ app.post("/", (req, res) => {
     text: text
   };
   sgMail.send(msg).then(e => {
-    let sentMail = "MAIL SENT";
+    let sentMail = "RIGHT ON, I'LL BE IN TOUCH";
     res.render("pages/index", { sentMail: sentMail });
   });
 });

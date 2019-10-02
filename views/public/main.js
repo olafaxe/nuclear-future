@@ -5,8 +5,11 @@ let fromUrl;
 navigateTo("main");
 window.addEventListener("click", e => {
     let target = e.target;
-    if (target.classList.contains("send-confirm")) {
-        target.remove();
+    if (target.classList.contains("form__send-btn")) {
+        rejectMessage(target.parentElement.children);
+    }
+    if (target.classList.contains("send-confirm_btn")) {
+        target.parentElement.remove();
     }
     if (target.classList.contains("nav__cursor")) {
         buttonAnimation(target);
@@ -60,6 +63,11 @@ function navigateTo(to) {
         contentDiv.innerHTML = content;
         fromUrl = toUrl;
     });
+}
+function rejectMessage(e) {
+    if (e[1].value === "" || e[2].value === "" || e[3].value === "") {
+        event.preventDefault();
+    }
 }
 function buttonAnimation(target) {
     let button = document.querySelectorAll(".nav__cursor");
