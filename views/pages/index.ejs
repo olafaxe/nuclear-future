@@ -10,6 +10,11 @@
       <div class="header-container">
         <% include ../partials/header %>
       </div>
+      <% if(sentMail) {%>
+      <div class="send-confirm send-confirm_btn">
+        <h2 class="send-confirm_btn"><%=sentMail%></h2>
+      </div>
+      <% }%>
       <div class="content-container"></div>
       <div class="footer-container">
         <% include ../partials/footer %>

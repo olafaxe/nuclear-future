@@ -409,7 +409,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  fieldset {
+  .contact-form__container {
     flex: 2;
     margin-left: 15%;
     margin-right: 15%;
@@ -479,7 +479,7 @@ body {
     // #contact-form__texta {
     //   height: 75px;
     // }
-    #fieldset {
+    .contact-form__container {
       height: 50%;
     }
     #contact-form__texta {
@@ -494,4 +494,19 @@ body {
       font-size: 125%;
     }
   }
+}
+
+.send-confirm {
+  margin-left: auto;
+  width: 200px;
+  height: 100px;
+  z-index: 99999;
+  background-color: #67bb50;
+  margin-right: auto;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f8f8f8;
+  box-shadow: 2px -2px 5px 0px rgba(248, 248, 248, 1);
 }

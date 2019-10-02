@@ -6,6 +6,9 @@ navigateTo("main");
 
 window.addEventListener("click", e => {
   let target = <HTMLElement>e.target;
+  if (target.classList.contains("send-confirm")) {
+    target.remove();
+  }
   if (target.classList.contains("nav__cursor")) {
     buttonAnimation(target);
   }
