@@ -47,6 +47,11 @@ function navigateTo(to) {
         return res.text();
     })
         .then(content => {
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+        });
         contentDiv.classList.remove(`content-container__${fromUrl}`);
         contentDiv.classList.add(`content-container__${toUrl}`);
         contentDiv.innerHTML = content;
