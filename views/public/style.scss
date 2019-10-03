@@ -513,17 +513,27 @@ body {
     margin-right: auto;
     width: 100%;
     height: 100%;
+    font-size: 115%;
+    resize: none;
+    max-width: 500px;
+    max-height: 300px;
+    min-height: 300px;
+  }
+
+  .contact-form__animation {
+    transition: 1s;
     background: url("images/cat2.webp");
     background-repeat: no-repeat;
     background-size: 25%;
     background-position-x: 50%;
     background-position-y: 25%;
-    font-size: 115%;
-    resize: none;
-    transition: 1s;
-    max-width: 500px;
-    max-height: 300px;
-    min-height: 300px;
+  }
+  .contact-form__nomation {
+    background: url("images/cat2.webp");
+    background-repeat: no-repeat;
+    background-size: 25%;
+    transition: 2.5s;
+    background-position-x: -100%;
   }
 
   #contact-form__subject {

@@ -6,7 +6,7 @@ navigateTo("main");
 window.addEventListener("click", e => {
     let target = e.target;
     if (target.classList.contains("form__send-btn")) {
-        rejectMessage(target.parentElement.children);
+        sendMessage(target.parentElement.children);
     }
     if (target.classList.contains("send-confirm_btn")) {
         target.parentElement.remove();
@@ -32,24 +32,13 @@ window.addEventListener("click", e => {
 window.addEventListener("keyup", e => {
     let textinput = document.querySelector("#contact-form__texta");
     if (textinput.textLength < 1) {
-        textinput.style.width = `100%`;
-        textinput.style.height = `100%`;
-        textinput.style.background = `url("images/cat2.webp")`;
-        textinput.style.backgroundRepeat = `no-repeat`;
-        textinput.style.backgroundSize = `25%`;
-        textinput.style.maxWidth = `500px`;
-        textinput.style.maxHeight = `300px`;
-        textinput.style.backgroundPositionX = `50%`;
-        textinput.style.backgroundPositionY = `50%`;
-        textinput.style.fontSize = `115%`;
-        textinput.style.resize = `none`;
-        textinput.style.transition = `2.5s;`;
+        textinput.classList.remove("contact-form__nomation");
+        textinput.classList.add("contact-form__animation");
     }
     if (textinput.textLength >= 1) {
-        textinput.style.transition = `2.5s`;
-        textinput.style.backgroundPosition = `-100%`;
+        textinput.classList.remove("contact-form__animation");
+        textinput.classList.add("contact-form__nomation");
     }
-    console.log(textinput.textLength);
 });
 function navigateTo(to) {
     fetch(`/${to}`)
@@ -64,7 +53,7 @@ function navigateTo(to) {
         fromUrl = toUrl;
     });
 }
-function rejectMessage(e) {
+function sendMessage(e) {
     if (e[1].value === "" || e[2].value === "" || e[3].value === "") {
         event.preventDefault();
     }
