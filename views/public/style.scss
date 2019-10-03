@@ -117,7 +117,7 @@ body {
 }
 .fa-linkedin,
 .fa-github {
-  color: #3e7297;
+  color: #76a8cc;
   font-size: 3em;
 }
 .index__first {
@@ -621,4 +621,17 @@ body {
     color: #82888a;
     background-color: #f8f8f8;
   }
+}
+
+.project__github-icon {
+  padding-bottom: 10px;
+}
+
+.fab {
+  transition: 0.5s;
+  opacity: 1;
+}
+.fab:hover {
+  transition: 0.5s;
+  opacity: 0.7;
 }
