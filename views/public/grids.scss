@@ -81,7 +81,7 @@
   grid-template-areas: "first first first";
 }
 
-@media only screen and (max-height: 900px) {
+@media only screen and (min-height: 900px) {
   .content-container__about {
     grid-template-rows: 1fr;
   }
