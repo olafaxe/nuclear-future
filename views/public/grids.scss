@@ -20,7 +20,7 @@
   grid-area: content;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 750px 350px 550px;
+  grid-template-rows: 750px 1fr 550px;
   grid-template-areas:
     "first first first"
     "second second second"
