@@ -77,8 +77,14 @@
   grid-area: content;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 750px;
   grid-template-areas: "first first first";
+}
+
+@media only screen and (max-height: 900px) {
+  .content-container__about {
+    grid-template-rows: 1fr;
+  }
 }
 
 .about__first {
