@@ -662,6 +662,9 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  h3 {
+    padding-top: 20px;
+  }
   img {
     max-width: 40%;
   }
@@ -686,6 +689,8 @@ body {
   .main-card {
     margin-left: auto;
     margin-right: auto;
+    min-width: 250px;
+    min-height: 250px;
   }
   .main-card:nth-child(even) {
     margin-left: auto;
