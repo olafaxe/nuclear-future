@@ -22,6 +22,14 @@ body {
   font-family: $font-stack;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  cursor: default;
+}
 .header {
   flex: 1;
   background-color: $main-color;
@@ -520,7 +528,6 @@ body {
   flex-direction: column;
 
   #contact-form__texta {
-    
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -549,7 +556,6 @@ body {
   }
 
   #contact-form__subject {
-  
     width: 255px;
     margin-bottom: 10px;
     margin-left: auto;
@@ -559,7 +565,6 @@ body {
     padding-left: 10px;
   }
   #contact-form__email {
-
     margin-left: auto;
     margin-right: auto;
     width: 255px;
@@ -567,7 +572,6 @@ body {
     padding-left: 10px;
   }
   #contact-form__send-btn {
-  
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
